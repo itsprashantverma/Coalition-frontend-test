@@ -7,7 +7,7 @@ interface ScheduleProps {
 function ScheduleCard(Props: ScheduleProps) {
 	const { schedule } = Props;
 	return (
-		<div className='absolute top-[120px] py-7 px-12 left-0 flex flex-col items-start justify-start space-y-2 bg-white opacity-90'>
+		<div className='absolute top-[80px] md:top-[120px] py-7 px-12 left-0 flex flex-col items-start justify-start space-y-2 bg-white opacity-90'>
 			<h2 className='text-2xl text-blue-950 uppercase'>{schedule}</h2>
 			<div className='flex flex-col items-center justify-center space-y-0'>
 				<Details date='25 Nov 2016' location='Vestibulum viverra' />
