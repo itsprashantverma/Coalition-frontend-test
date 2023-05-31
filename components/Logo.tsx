@@ -2,6 +2,7 @@ import logo from '../assets/logo.png';
 
 import Image from 'next/image';
 import { useScroll } from '../hooks/useScroll';
+import Link from 'next/link';
 
 interface Props {
 	isFooter: boolean;
@@ -13,14 +14,17 @@ function Logo(Props: Props) {
 	const { isFooter } = Props;
 
 	return (
-		<div className='flex items-center justify-center space-x-4'>
-			<Image
-				src={logo}
-				width={100}
-				height={100}
-				alt='logo'
-				className='w-10 h-10 rounded-full'
-			/>
+		<div className='flex items-center justify-center space-x-4 cursor-pointer'>
+			<Link href='#'>
+				<Image
+					src={logo}
+					width={100}
+					height={100}
+					alt='logo'
+					className='w-10 h-10 rounded-full'
+				/>
+			</Link>
+
 			<div
 				className={`${
 					scrollPos > 80 ? '' : 'hidden'

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+}
+
 @layer components {
 	.flex-container {
 		@apply w-screen flex items-center justify-center px-3;
